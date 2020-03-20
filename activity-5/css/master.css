@@ -1,0 +1,155 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+/* Styling for all the elements in the header */
+#title {
+    margin: 20px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#authorAndImage {
+    margin: 20px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+#selfPortrait {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 25px;
+    float: left;
+}
+
+#author {
+    padding-top: 5px;
+    padding-left: 50px;
+}
+
+#date {
+    padding-left: 50px;
+}
+
+#vscodeImage {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+/* Styling for the first package */
+.p1Class {
+    padding-left: 30px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid lightgray;
+}
+
+#p1Name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.underTitle {
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+#p1Author {
+    padding-bottom: 25px;
+    padding-right: 50px;
+    float: left;
+}
+
+#p1Downloads {
+    float: left;
+    padding-right: 50px;
+}
+
+#p1Desc {
+    padding-bottom: 20px;
+    float: left;
+    padding-right: 100px;
+}
+
+/* Styling for the second package */
+.p2Class {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid lightgray;
+}
+
+#p2Name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.underTitle {
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+#p2Author {
+    padding-bottom: 25px;
+    padding-right: 50px;
+    float: left;
+}
+
+#p2Downloads {
+    float: left;
+    padding-right: 50px;
+}
+
+#p2Desc {
+    padding-bottom: 20px;
+    float: left;
+    padding-right: 170px;
+}
+
+/* Styling for the third package */
+.p3Class {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid lightgray;
+}
+
+#p3Name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.underTitle {
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+#p3Author {
+    padding-bottom: 25px;
+    padding-right: 50px;
+    float: left;
+}
+
+#p3Downloads {
+    float: left;
+    padding-right: 50px;
+}
+
+#p3Desc {
+    float: left;
+    padding-right: 125px;
+}
