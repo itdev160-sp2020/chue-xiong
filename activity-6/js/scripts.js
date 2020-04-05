@@ -16,7 +16,7 @@ var data = [
         type: messageType.in,
         user: 'Joe',
         message: 'Hi Mike! No, how about QDoba?'
-    }
+    },
     {
         type: messageType.out,
         user: 'Mike',
@@ -31,14 +31,14 @@ function Message(type, user, message){
 }
 
 function createMessageElement(message) {
-    var messageText = documents.createTextNode(
+    var messageText = document.createTextNode(
         message.user + ': ' + message.message
     );
 
     var messageEl = document.createElement('div');
     messageEl.appendChild(messageText);
 
-    messageEl.className = messageType;
+    messageEl.className = message.Type;
 
     return messageEl;
 }
@@ -72,21 +72,21 @@ function addMessageHandler(event){
 
         messageInput.value = '';
     }
+}
 
-    function loadSeedData() {
-        for (var i = 0; i < data.length; i++) {
-            var message = new Message(data[i].type, data[i].user, data[i].message);
-            messages.push(message);
-        }
+function loadSeedData() {
+    for (var i = 0; i < data.length; i++) {
+        var message = new Message(data[i].type, data[i].user, data[i].message);
+        messages.push(message);
+    }
 
-        var messagesContainerEl = document.getElementById('message-container');
+    var messagesContainerEl = document.getElementById('message-container');
 
-        for (var i = 0; i < messages.length; i++) {
-            var message = messages[i];
-            var el = createMessageElement(message);
+    for (var i = 0; i < messages.length; i++) {
+        var message = messages[i];
+        var el = createMessageElement(message);
 
-            messagesContainerEl.appendChild(el);
-        }
+       messagesContainerEl.appendChild(el);
     }
 }
 
